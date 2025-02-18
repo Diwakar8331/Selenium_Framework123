@@ -17,6 +17,7 @@ public class StandAloneTest {
 		// By this chromedriver will automaticaly set to the local:-
 		// WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
+		
 		driver.get("https://rahulshettyacademy.com/client");
 		driver.manage().window().maximize();
 		// implicitlyWait
@@ -75,7 +76,7 @@ System.out.println(driver.getPageSource());
 
 		List<WebElement> cart=driver.findElements(By.xpath("//div[@class='cart']//ul//li"));
 		
-		
+		System.out.println("this is to check for the git");
 	}
 
 }
